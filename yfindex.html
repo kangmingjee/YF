@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        *{margin: 0;padding: 0;box-sizing: border-box;}
+        a{text-decoration: none;}
+        body{background-color: #f8f7f2;}
+        #wrap{width: 100%; height: 100%;}
+    
+        .heder{
+            width: 100%;
+            height: 109px;
+            background-color: bisque;
+        }
+        .logo{
+            display: inline-block;
+            height: 69px;
+            /* width: 86px; */
+            /* background: url(IMG/F.png)no-repeat; */
+            margin: 0 auto;
+        }
+        .menu1{margin: 0 auto;
+            height: 59px;
+            margin-left: 147px;}
+        .menu1 li{
+            margin-right: 83px;
+            text-align: center;
+            width: 170px;
+            height: 109px;
+            line-height: 109px;
+            display: inline-block;
+            background-color: aqua;
+        } 
+        .main{width: 1920px;
+              height: 800px;
+              background-color: bisque;
+        }
+        .event{
+            margin: 0 auto;
+            width: 666px;
+            height: 52px;
+            /* background-color: aqua; */
+            padding: 50px;
+            text-align: center;}
+        .event h1{ color: black;
+                 font-size: 50px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-weight: bold;}
+ 
+        .main_1{
+            display:block;
+            width: 666px;
+            height: 600px;
+            background-color: blue;
+            margin: 0 auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .mainimg_3{width: ;}
+
+/* layout라인 */
+#layout{
+    width: 1920px;
+    height: 1536px;
+    /* background-color: black;} */}
+/* .main2{width: 600px;height: 375px;} */
+.main2{display: inline-block;}
+.box1{
+    float: left;
+    margin-right: 20px;
+    width: 600px;
+    height: 375px;
+    background-color: azure;}
+.box2{
+    float: left;
+    margin-right: 20px;
+    width: 600px;
+    height: 375px;
+    background-color: blueviolet;}
+.box3{
+    float: left;
+    margin-right: 20px;
+    width: 600px;
+    height:375px;
+    background-color: yellowgreen;}
+
+
+.main3{
+
+        display: block;
+        width: 1920px;
+        height: 800px;
+        position: relative;
+        background-color: yellow;}
+
+.main3 li{display: inline-block;}
+        
+    .main3_m1{
+        margin: 0 auto;
+        display: inline-block;
+        position: absolute;    
+        float:left;
+        width: 1920px;
+        height: 300px;
+        background-color:red;
+    }
+    .main3_m2{
+        margin: 0 auto;
+        display: inline-block;
+        position: absolute;     
+        float: left;
+        margin-left: 480px;
+        width: 950px;
+        height: 300px;
+        background-color:yellowgreen;}
+
+    #rivew{
+        width: 1920px;
+        height: 520px;
+    }
+    .rp{
+        background-color: antiquewhite;
+        height: 302px;
+    }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="logo"> <img src="IMG/F.png" alt="YF피부과">YF피부과</div>
+        <header class="heder">
+        <ul class="menu1">
+                <li><a href="#">YF피부과</a></li>
+                <li><a href="#">병원소개</a></li>
+                <li><a href="#">스킨케어</a></li>
+                <li><a href="#">진료상담</a></li>
+                <li><a href="#">공지사항</a></li>
+                <a href="#">로그인 / 회원가입 / 마이페이지 </a>
+        </ul><!-- menu -->
+        <!-- <ul class="menu2">
+                <li><a href="#">로그인 / 회원가입 / 마이페이지 </a></li>
+        </ul>menu2 -->
+        </header><!-- heder -->
+
+        <!-- main라인  -->
+    <div id="layout">
+            <ul class="main1">
+                <li class="event">
+                    <h1>YF피부과 BEST EVENT</h1></li>
+                <li class="main_1">main photo</li>
+            </ul><!-- main1 -->
+            <main class="main2">
+                <div class="docimg"><h1>의료진소개</h1></div>
+                <div class="box1">img1</div>
+                <div class="box2">img2</div>
+                <div class="box3">img3</div>
+            </main><!-- main2 -->
+            
+            <!-- <div class="main33"> -->
+                <ul class="main3">
+                    <li class="hot">
+                        <h1>h.o.t 인기시술</h1></li>
+                    <li class="main3_m2">main photo</div>
+                        <li><a href="#">자세히보기</a></li>
+                    <li class="main3_m1">m1</div>
+                    </ul><!-- main3 -->
+            <!-- </div>main33 -->
+
+            <div id="rivew">
+                <div class="rp">r_p</div>
+            </main><!-- rivew -->
+    </div><!-- layout -->
+
+
+    <div class="footer">
+        <ul class="f_footer">
+            <li><a href="#">이용약관 | 개인정보취급방침 | 무단수집거부 </a></li>
+            <li><a href="#">YF피부과 <img src="IMG/ft_img01.jpg" alt=""></a></li>
+            <li><a href="#">대표자 :김형준,황동연 사업자등록번호 : 386 -21-00739 </a></li>
+            <li><a href="#">대표자 :김형준,황동연 사업자등록번호 : 386 -21-00739 </a></li>
+
+
+
+        </ul>
+
+
+    </div>
+    </div><!-- wrap -->
+</body>
+</html>

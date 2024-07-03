@@ -1,180 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style type="text/css">
-        *{margin: 0;padding: 0;box-sizing: border-box;}
-        a{text-decoration: none;}
-        body{background-color: #f8f7f2;}
-        #wrap{width: 100%; height: 100%;}
-    
-        .heder{
-            width: 100%;
-            height: 109px;
-            background-color: bisque;
-        }
-        .logo{
-            display: inline-block;
-            height: 69px;
-            /* width: 86px; */
-            /* background: url(IMG/F.png)no-repeat; */
-            margin: 0 auto;
-        }
-        .menu1{margin: 0 auto;
-            height: 59px;
-            margin-left: 147px;}
-        .menu1 li{
-            margin-right: 83px;
-            text-align: center;
-            width: 170px;
-            height: 109px;
-            line-height: 109px;
-            display: inline-block;
-            background-color: aqua;
-        } 
-        .main{width: 1920px;
-              height: 800px;
-              background-color: bisque;
-        }
-        .event{
-            margin: 0 auto;
-            width: 666px;
-            height: 52px;
-            /* background-color: aqua; */
-            padding: 50px;
-            text-align: center;}
-        .event h1{ color: black;
-                 font-size: 50px;
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                font-weight: bold;}
- 
-        .main_1{
-            display:block;
-            width: 666px;
-            height: 600px;
-            background-color: blue;
-            margin: 0 auto;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-
-        .mainimg_3{width: ;}
-
-/* layout라인 */
-#layout{
-    width: 1920px;
-    height: 1536px;
-    /* background-color: black;} */}
-/* .main2{width: 600px;height: 375px;} */
-.main2{display: inline-block;}
-.box1{
-    float: left;
-    margin-right: 20px;
-    width: 600px;
-    height: 375px;
-    background-color: azure;}
-.box2{
-    float: left;
-    margin-right: 20px;
-    width: 600px;
-    height: 375px;
-    background-color: blueviolet;}
-.box3{
-    float: left;
-    margin-right: 20px;
-    width: 600px;
-    height:375px;
-    background-color: yellowgreen;}
-
-
-.main3{
-
-        display: block;
-        width: 1920px;
-        height: 800px;
-        position: relative;
-        background-color: yellow;}
-
-.main3 li{display: inline-block;}
-        
-    .main3_m1{
-        margin: 0 auto;
-        display: inline-block;
-        position: absolute;    
-        float:left;
-        width: 1920px;
-        height: 300px;
-        background-color:red;
-    }
-    .main3_m2{
-        margin: 0 auto;
-        display: inline-block;
-        position: absolute;     
-        float: left;
-        margin-left: 480px;
-        width: 950px;
-        height: 300px;
-        background-color:yellowgreen;}
-
-    #rivew{
-        width: 1920px;
-        height: 520px;
-    }
-    .rp{
-        background-color: antiquewhite;
-        height: 302px;
-    }
-
-
-
-
-    </style>
+    <title>YF피부과</title>
+    <link rel="shortcut icon" href="IMG/F.ico">
+    <link rel="stylesheet" href="yf.css">
+  
+    <script src="Script/jquery-3.7.1.js"></script>
+    <script lang="java">
+        $(function(){
+            $(".main>li").hover(function(){
+                $(this).children(".sub").stop().slideDown();
+            }, function(){
+                $(this).children(".sub").stop().slideUp();
+            }) // hover
+        })//jquery end
+    </script>
 </head>
 <body>
     <div id="wrap">
-        <div class="logo"> <img src="IMG/F.png" alt="YF피부과">YF피부과</div>
+        <div class="logo"> <img src="IMG/F.png" alt="YF피부과">Young Fresh </div>
         <header class="heder">
-        <ul class="menu1">
-                <li><a href="#">YF피부과</a></li>
-                <li><a href="#">병원소개</a></li>
-                <li><a href="#">스킨케어</a></li>
-                <li><a href="#">진료상담</a></li>
-                <li><a href="#">공지사항</a></li>
-                <a href="#">로그인 / 회원가입 / 마이페이지 </a>
-        </ul><!-- menu -->
-        <!-- <ul class="menu2">
-                <li><a href="#">로그인 / 회원가입 / 마이페이지 </a></li>
-        </ul>menu2 -->
-        </header><!-- heder -->
+            <nav class="nav">
+                <ul class="main">
+                    <li>
+                        <a href="#">YF피부과</a>
+                        <ul class="sub">
+                            <li><a href="#">피부과 시술</a></li>
+                            <li><a href="#">의료진 소개</a></li>
+                            <li><a href="#">인사말</a></li>
+                        </ul><!-- sub -->
+                    </li>
+                    <li>
+                        <a href="#">병원소개</a>
+                        <ul class="sub">
+                            <li><a href="#">설립과정</a></li>
+                            <li><a href="#">진료안내</a></li>
+                            <li><a href="#">오시는 길</a></li>
+                        </ul><!-- sub -->
+                    </li>
+                    <li>
+                        <a href="#">스킨케어</a>
+                        <ul class="sub">
+                            <li><a href="#">얼굴</a></li>
+                            <li><a href="#">바디</a></li>
+                            <li><a href="#">레이저</a></li>
+                        </ul><!-- sub -->
+                    </li>
+                    <li>
+                        <a href="#">진료상담</a>
+                        <ul class="sub">
+                            <li><a href="#">예약 /문의</a></li>
+                            <li><a href="#">EVENT진행</a></li>
+                        </ul><!-- sub -->
+                    </li>
+                    <li>
+                        <a href="#">공지사항</a>
+                        <ul class="sub">
+                            <li><a href="#">이달의 이벤트</a></li>
+                            <li><a href="#">휴무공지</a></li>
+                            <li><a href="#">고객의소리</a></li>
+                        </ul><!-- sub -->
+                    </li>
+                </ul><!-- main -->
+            </nav><!-- nav -->
+
+            
+            <ul class="until">
+                <li class="until_1"><a href="#">로그인</a></li>
+                <li class="until_2"><a href="#">회원가입</a></li>
+                <li class="until_3"><a href="#">마이페이지</a></li>
+                <li class="until_4"><a href="#">검색</a></li>
+            </ul><!-- until -->
+        </div><!-- head_inner -->
+        <div class="sub_bg"></div>
+</header><!-- header -->
+
+<section id="section" class="clear_fix">
 
         <!-- main라인  -->
     <div id="layout">
             <ul class="main1">
                 <li class="event">
                     <h1>YF피부과 BEST EVENT</h1></li>
-                <li class="main_1">main photo</li>
+                    <li class="plus"><a href="#">+</a></li>
+                    <li class="main_1"></li>
+                    <li class="plus"><a href="#">+</a></li>
             </ul><!-- main1 -->
             <main class="main2">
                 <div class="docimg"><h1>의료진소개</h1></div>
-                <div class="box1">img1</div>
-                <div class="box2">img2</div>
-                <div class="box3">img3</div>
+                <div class="box1">YF피부과</div>
+                <div class="box2">YF피부과</div>
+                <div class="box3">YF피부과</div>
             </main><!-- main2 -->
             
             <!-- <div class="main33"> -->
                 <ul class="main3">
-                    <li class="hot">
-                        <h1>h.o.t 인기시술</h1></li>
-                    <li class="main3_m2">main photo</div>
-                        <li><a href="#">자세히보기</a></li>
-                    <li class="main3_m1">m1</div>
-                    </ul><!-- main3 -->
+                    <li class="gonggi"><h1>공지사항</h1></li>
+                    <li class="main3_m1">m1</li>
+                    <li class="main3_m2">m2</li>
+                    <li class="main3_m3">m3</li>
+                    <li class="hot"><h1>h.o.t 인기시술</h1></li>
+
+                </ul><!-- main3 -->
             <!-- </div>main33 -->
 
             <div id="rivew">
-                <div class="rp">r_p</div>
+            <ul class="main4">
+                    <li class="main4_m1">m1</li>
+                    <li class="main4_m2">m2</li>
+            </ul>main4
             </main><!-- rivew -->
     </div><!-- layout -->
 
